@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <div class="globe-icon"></div>
+          <h1>World Clock</h1>
+        </div>
+        <div class="display-mode">
+          <label for="displayMode">Display Mode:</label>
+          <select id="displayMode">
+            <option value="both">Both</option>
+            <option value="digital">Digital Only</option>
+            <option value="analog">Analog Only</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main class="clocks-grid">
+      <div class="clock-card" data-timezone="Asia/Ho_Chi_Minh">
+        <div class="city-name">
+          <span class="flag">🇻🇳</span>
+          <span class="city">Hanoi, Vietnam</span>
+        </div>
+        <div class="digital-time">00:00:00</div>
+        <div class="date">Loading...</div>
+        <div class="analog-clock">
+          <div class="clock-face">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
+            <div class="number number-12">12</div>
+            <div class="number number-3">3</div>
+            <div class="number number-6">6</div>
+            <div class="number number-9">9</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-card" data-timezone="Asia/Yangon">
+        <div class="city-name">
+          <span class="flag">🇲🇲</span>
+          <span class="city">Yangon, Myanmar</span>
+        </div>
+        <div class="digital-time">00:00:00</div>
+        <div class="date">Loading...</div>
+        <div class="analog-clock">
+          <div class="clock-face">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
+            <div class="number number-12">12</div>
+            <div class="number number-3">3</div>
+            <div class="number number-6">6</div>
+            <div class="number number-9">9</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-card" data-timezone="Asia/Seoul">
+        <div class="city-name">
+          <span class="flag">🇰🇷</span>
+          <span class="city">Seoul, Korea</span>
+        </div>
+        <div class="digital-time">00:00:00</div>
+        <div class="date">Loading...</div>
+        <div class="analog-clock">
+          <div class="clock-face">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
+            <div class="number number-12">12</div>
+            <div class="number number-3">3</div>
+            <div class="number number-6">6</div>
+            <div class="number number-9">9</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-card" data-timezone="Asia/Tokyo">
+        <div class="city-name">
+          <span class="flag">🇯🇵</span>
+          <span class="city">Tokyo, Japan</span>
+        </div>
+        <div class="digital-time">00:00:00</div>
+        <div class="date">Loading...</div>
+        <div class="analog-clock">
+          <div class="clock-face">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
+            <div class="number number-12">12</div>
+            <div class="number number-3">3</div>
+            <div class="number number-6">6</div>
+            <div class="number number-9">9</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-card" data-timezone="Asia/Singapore">
+        <div class="city-name">
+          <span class="flag">🇸🇬</span>
+          <span class="city">Singapore</span>
+        </div>
+        <div class="digital-time">00:00:00</div>
+        <div class="date">Loading...</div>
+        <div class="analog-clock">
+          <div class="clock-face">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
+            <div class="number number-12">12</div>
+            <div class="number number-3">3</div>
+            <div class="number number-6">6</div>
+            <div class="number number-9">9</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-card" data-timezone="Asia/Kuala_Lumpur">
+        <div class="city-name">
+          <span class="flag">🇲🇾</span>
+          <span class="city">Kuala Lumpur, Malaysia</span>
+        </div>
+        <div class="digital-time">00:00:00</div>
+        <div class="date">Loading...</div>
+        <div class="analog-clock">
+          <div class="clock-face">
+            <div class="hour-hand"></div>
+            <div class="minute-hand"></div>
+            <div class="second-hand"></div>
+            <div class="center-dot"></div>
+            <div class="number number-12">12</div>
+            <div class="number number-3">3</div>
+            <div class="number number-6">6</div>
+            <div class="number number-9">9</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

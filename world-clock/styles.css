@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.globe-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(74, 222, 128, 0.4);
+}
+
+.globe-icon::before {
+  content: '🌍';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.display-mode {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+}
+
+.display-mode label {
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.display-mode select {
+  background: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.display-mode select:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.clocks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.clock-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.clock-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.city-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.flag {
+  font-size: 1.5rem;
+}
+
+.digital-time {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.date {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.analog-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.clock-face {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #667eea;
+  position: relative;
+  background: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 10px;
+}
+
+.hour-hand {
+  width: 6px;
+  height: 50px;
+  background: #1f2937;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.minute-hand {
+  width: 4px;
+  height: 70px;
+  background: #1f2937;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.second-hand {
+  width: 2px;
+  height: 80px;
+  background: #ef4444;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #1f2937;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.number {
+  position: absolute;
+  font-weight: 600;
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.number-12 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-3 {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.number-6 {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number-9 {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clock-card.digital-only .analog-clock {
+  display: none;
+}
+
+.clock-card.analog-only .digital-time,
+.clock-card.analog-only .date {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .clocks-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .digital-time {
+    font-size: 2rem;
+  }
+
+  .clock-face {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hour-hand {
+    height: 40px;
+  }
+
+  .minute-hand {
+    height: 55px;
+  }
+
+  .second-hand {
+    height: 65px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .clocks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
