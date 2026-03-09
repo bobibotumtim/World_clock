@@ -2,8 +2,6 @@
 
 A beautiful, responsive world clock application showing time across different timezones with both digital and analog displays.
 
-![World Clock Preview](preview.png)
-
 ## ✨ Features
 
 - **6 Major Cities**: Hanoi, Yangon, Seoul, Tokyo, Singapore, Kuala Lumpur
@@ -15,10 +13,6 @@ A beautiful, responsive world clock application showing time across different ti
   - Analog Only
 - **Responsive Design**: Works perfectly on mobile, tablet, and desktop
 - **Beautiful UI**: Modern gradient background with smooth animations
-
-## 🚀 Demo
-
-[Live Demo](https://your-username.github.io/world-clock)
 
 ## 📸 Screenshots
 
@@ -38,26 +32,6 @@ Traditional analog clocks for a classic look.
 - Vanilla JavaScript
 - Intl.DateTimeFormat API for timezone handling
 
-## 📦 Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/world-clock.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd world-clock
-```
-
-3. Open `index.html` in your browser or use a local server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve
-```
 
 ## 🎯 How It Works
 
@@ -160,33 +134,7 @@ Available timezones (IANA timezone database):
 
 None at the moment! Feel free to report issues.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
 This project is open source and available under the [MIT License](LICENSE).
-
-## 👤 Author
-
-**Trần Quang Hiếu**
-
-- GitHub: [@bobibotumtim](https://github.com/bobibotumtim)
-- LinkedIn: [Hiếu Quang](https://www.linkedin.com/in/hiếu-quang-07412a314/)
-- Email: quanghieuna2005@gmail.com
-
-## 🙏 Acknowledgments
-
-- Inspired by modern world clock applications
-- Flag emojis from Unicode
-- Timezone data from IANA Time Zone Database
 
 ## 📊 Browser Support
 
